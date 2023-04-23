@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		35A0154329F547BF000A217B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0154229F547BF000A217B /* AppDelegate.swift */; };
 		35A0154529F547BF000A217B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0154429F547BF000A217B /* SceneDelegate.swift */; };
-		35A0154729F547BF000A217B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0154629F547BF000A217B /* ViewController.swift */; };
 		35A0154A29F547BF000A217B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A0154829F547BF000A217B /* Main.storyboard */; };
 		35A0154C29F547C1000A217B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A0154B29F547C1000A217B /* Assets.xcassets */; };
 		35A0154F29F547C1000A217B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A0154D29F547C1000A217B /* LaunchScreen.storyboard */; };
+		35A0155729F548F3000A217B /* TrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0155629F548F3000A217B /* TrackTableViewController.swift */; };
+		35A0155929F549C4000A217B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0155829F549C4000A217B /* Track.swift */; };
+		35A0155B29F550BA000A217B /* DetailTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0155A29F550BA000A217B /* DetailTrackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35A0153F29F547BF000A217B /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A0154229F547BF000A217B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A0154429F547BF000A217B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35A0154629F547BF000A217B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35A0154929F547BF000A217B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35A0154B29F547C1000A217B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A0154E29F547C1000A217B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35A0155029F547C1000A217B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A0155629F548F3000A217B /* TrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewController.swift; sourceTree = "<group>"; };
+		35A0155829F549C4000A217B /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		35A0155A29F550BA000A217B /* DetailTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTrackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				35A0154229F547BF000A217B /* AppDelegate.swift */,
 				35A0154429F547BF000A217B /* SceneDelegate.swift */,
-				35A0154629F547BF000A217B /* ViewController.swift */,
 				35A0154829F547BF000A217B /* Main.storyboard */,
 				35A0154B29F547C1000A217B /* Assets.xcassets */,
 				35A0154D29F547C1000A217B /* LaunchScreen.storyboard */,
 				35A0155029F547C1000A217B /* Info.plist */,
+				35A0155629F548F3000A217B /* TrackTableViewController.swift */,
+				35A0155829F549C4000A217B /* Track.swift */,
+				35A0155A29F550BA000A217B /* DetailTrackViewController.swift */,
 			);
 			path = TrackListApp;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A0154729F547BF000A217B /* ViewController.swift in Sources */,
+				35A0155929F549C4000A217B /* Track.swift in Sources */,
+				35A0155729F548F3000A217B /* TrackTableViewController.swift in Sources */,
+				35A0155B29F550BA000A217B /* DetailTrackViewController.swift in Sources */,
 				35A0154329F547BF000A217B /* AppDelegate.swift in Sources */,
 				35A0154529F547BF000A217B /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.TrackListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.TrackListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
